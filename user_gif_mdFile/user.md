@@ -39,7 +39,7 @@
 
 <details>
     <summary>8. 내가 쓴 리뷰 조회</summary>
-    <img src="../img/test_img/customer_test_img/회원 관리 기능/getReviewList.gif" alt="리뷰조회_gif">
+    <img src="../img/test_img/customer_test_img/회원 관리 기능/getMyReviewList.gif" alt="리뷰조회_gif">
 </details>
 
 <details>
