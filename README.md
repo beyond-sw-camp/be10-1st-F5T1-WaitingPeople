@@ -1,6 +1,8 @@
 # ⏱프로젝트 개요
 ### 😃팀원소개
-[정의진(25)](https://github.com/JungUiJin)
+| 정의진 | 전아영 | 이성민 | 이창윤 | 박상현 | 남가람 |
+| --- | --- | --- | --- | --- | --- |
+| 깃 링크 | 깃 링크 | 깃 링크 | 깃 링크 | 깃 링크 | 깃 링크 |
 
 ![title](./img/readme_img/title_img.JPG)
 
@@ -64,35 +66,35 @@ Master-Slave구조는 고가용성과 확장성을 위해 자주 사용되는 DB
 <details>
 <summary>고객 회원 정보 관련 기능</summary>
 <div markdown="1">
-    <details><summary>1.회원기능</summary><div markdown="1"></div></details>
-    <details><summary>2.로그인</summary><div markdown="1"></div></details>
-    <details><summary>3.회원정보조회</summary><div markdown="1"></div></details>
-    <details><summary>4.회원정보수정</summary><div markdown="1"></div></details>
-    <details><summary>5.내가작성한리뷰조회</summary><div markdown="1"></div></details>
-    <details><summary>6.회원탈퇴</summary><div markdown="1"></div></details>
+    <details><summary>1.회원기능</summary></details>
+    <details><summary>2.로그인</summary></details>
+    <details><summary>3.회원정보조회</summary></details>
+    <details><summary>4.회원정보수정</summary></details>
+    <details><summary>5.내가작성한리뷰조회</summary></details>
+    <details><summary>6.회원탈퇴</summary></details>
 </div>
 </details>
 <details>
 <summary>웨이팅 등록 관련 기능</summary>
 <div markdown="1">
-    <details><summary>1.웨이팅 등록</summary><div markdown="1"></div></details>
-    <details><summary>2.웨이팅 알림생성</summary><div markdown="1"></div></details>
-    <details><summary>3.웨이팅 확정</summary><div markdown="1"></div></details>
-    <details><summary>4.웨이팅 취소</summary><div markdown="1"></div></details>
+    <details><summary>1.웨이팅 등록</summary></details>
+    <details><summary>2.웨이팅 알림생성</summary></details>
+    <details><summary>3.웨이팅 확정</summary>></details>
+    <details><summary>4.웨이팅 취소</summary>></details>
 </div>
 </details>
 <details>
 <summary>음식점 정보 관련 기능</summary>
 <div markdown="1">
-    <details><summary>1.음식점 이름 검색</summary><div markdown="1"></div></details>
-    <details><summary>2.음식점 메뉴 검색</summary><div markdown="1"></div></details>
-    <details><summary>3.음식점 지역 검색</summary><div markdown="1"></div></details>
-    <details><summary>4.음식점 태그 검색</summary><div markdown="1"></div></details>
-    <details><summary>5.음식점 카테고리 검색</summary><div markdown="1"></div></details>
-    <details><summary>6.음식점 별점 순 정렬</summary><div markdown="1"></div></details>
-    <details><summary>7.음식점 실시간웨이팅 순 정렬</summary><div markdown="1"></div></details>
-    <details><summary>8.음식점 평균가격순 순 정렬</summary><div markdown="1"></div></details>
-    <details><summary>9.음식점 신규등록순 순 정렬</summary><div markdown="1"></div></details>
+    <details><summary>1.음식점 이름 검색</summary></details>
+    <details><summary>2.음식점 메뉴 검색</summary></details>
+    <details><summary>3.음식점 지역 검색</summary></details>
+    <details><summary>4.음식점 태그 검색</summary</details>
+    <details><summary>5.음식점 카테고리 검색</summary></details>
+    <details><summary>6.음식점 별점 순 정렬</summary></details>
+    <details><summary>7.음식점 실시간웨이팅 순 정렬</summary></details>
+    <details><summary>8.음식점 평균가격순 순 정렬</summary></details>
+    <details><summary>9.음식점 신규등록순 순 정렬</summary></details>
 </div>
 </details>
 
