@@ -2,13 +2,13 @@
 -- 웨이팅 알림 생성 기능 트리거
 delimiter //
 CREATE TRIGGER after_wating_insert
-	AFTER insert
-	ON tb_waiting
-	FOR EACH row
+   AFTER insert
+   ON tb_waiting
+   FOR EACH row
 BEGIN
-	INSERT
-      INTO tb_waiting_alarm(alarm_seq, waiting_seq, alarm_content)
-    VALUES (NEW.waiting_seq,NEW.waiting_seq, '고객님의 웨이팅이 등록되었습니다.');
+   INSERT
+     INTO tb_waiting_alarm(alarm_seq, waiting_seq, alarm_content)
+   VALUES (NEW.waiting_seq,NEW.waiting_seq, '고객님의 웨이팅이 등록되었습니다.');
 END //
 delimiter ;
 
@@ -16,13 +16,13 @@ delimiter ;
 -- 웨이팅 등록 확정 트리거
 delimiter //
 CREATE TRIGGER after_update_arlam
-	AFTER update
-	ON tb_waiting_alarm
-	FOR EACH row
+   AFTER update
+   ON tb_waiting_alarm
+   FOR EACH row
 BEGIN
-	UPDATE tb_waiting
-	   SET waiting_status = '입장', enter_date = NOW()
-	 WHERE waiting_seq = NEW.waiting_seq AND NEW.accept_yn = 'Y' AND cancel_yn = 'N';
+   UPDATE tb_waiting
+      SET waiting_status = '입장', enter_date = NOW()
+    WHERE waiting_seq = NEW.waiting_seq AND NEW.accept_yn = 'Y' AND cancel_yn = 'N';
 END //
 delimiter ;
 
