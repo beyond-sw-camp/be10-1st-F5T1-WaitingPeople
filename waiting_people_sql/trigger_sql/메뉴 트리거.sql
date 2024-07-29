@@ -7,15 +7,15 @@ CREATE TRIGGER before_tb_menu_insert
    ON tb_menu
    FOR EACH ROW
 BEGIN
-	DECLARE default_menu_group_seq INT;
+   DECLARE default_menu_group_seq INT;
 
    IF NEW.menu_group_seq IS NULL OR NEW.menu_group_seq <= 0 THEN
    SELECT
-         mg.menu_group_seq INTO default_menu_group_seq
+          mg.menu_group_seq INTO default_menu_group_seq
      FROM tb_menu_group mg
     WHERE mg.menu_group_name = '기본메뉴'
       AND mg.restaurant_seq IS NULL;
-   SET NEW.menu_group_seq = default_menu_group_seq;
+      SET NEW.menu_group_seq = default_menu_group_seq;
    
    ELSEIF NEW.restaurant_seq <= 0 OR NEW.restaurant_seq IS NULL THEN
    SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = '음식점 등록에 오류가 있습니다. 다시 입력하세요.';
@@ -40,15 +40,15 @@ CREATE TRIGGER before_menu_tb_image_file_insert
    BEFORE INSERT
    ON tb_image_file
    FOR EACH ROW
-BEGIN
-	IF NEW.review_seq IS NULL AND NEW.restaurant_seq IS NULL AND NEW.menu_seq IS NULL THEN
-	SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = '어떤 것과 관련된 사진인지 입력하세요.';
+BEGIN 
+   IF NEW.review_seq IS NULL AND NEW.restaurant_seq IS NULL AND NEW.menu_seq IS NULL THEN
+   SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = '어떤 것과 관련된 사진인지 입력하세요.';
 	
-	ELSEIF TRIM(NEW.picture_name) = '' OR NEW.picture_name IS NULL THEN
-	SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = '사진파일이름 등록은 필수입니다.';
+   ELSEIF TRIM(NEW.picture_name) = '' OR NEW.picture_name IS NULL THEN
+   SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = '사진파일이름 등록은 필수입니다.';
 	
-	ELSEIF TRIM(NEW.picture_original_name) = '' OR NEW.picture_original_name IS NULL THEN
-	SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = '사진 이름 등록은 필수입니다.';
+   ELSEIF TRIM(NEW.picture_original_name) = '' OR NEW.picture_original_name IS NULL THEN
+   SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = '사진 이름 등록은 필수입니다.';
    
    ELSEIF TRIM(NEW.picture_url) = '' OR NEW.picture_url IS NULL THEN
    SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = '사진url은 등록은 필수입니다.';
@@ -67,19 +67,19 @@ DELIMITER ;
 DELIMITER //
 
 CREATE TRIGGER before_tb_menu_update
-	BEFORE UPDATE
-	ON tb_menu
-	FOR EACH ROW
+   BEFORE UPDATE
+   ON tb_menu
+   FOR EACH ROW
 BEGIN
    DECLARE default_menu_group_seq INT;
 
    IF NEW.menu_group_seq IS NULL OR NEW.menu_group_seq <= 0 THEN
    SELECT
-         mg.menu_group_seq INTO default_menu_group_seq
+          mg.menu_group_seq INTO default_menu_group_seq
      FROM tb_menu_group mg
     WHERE mg.menu_group_name = '기본메뉴'
       AND mg.restaurant_seq IS NULL;
-   SET NEW.menu_group_seq = default_menu_group_seq;
+      SET NEW.menu_group_seq = default_menu_group_seq;
    
    ELSEIF NEW.restaurant_seq <= 0 OR NEW.restaurant_seq IS NULL THEN
    SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = '음식점 등록에 오류가 있습니다. 다시 입력하세요.';
@@ -105,14 +105,14 @@ CREATE TRIGGER before_menu_tb_image_file_update
    ON tb_image_file
    FOR EACH ROW
 BEGIN
-	IF NEW.review_seq IS NULL AND NEW.restaurant_seq IS NULL AND NEW.menu_seq IS NULL THEN
-	SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = '어떤 것과 관련된 사진인지 입력하세요.';
+   IF NEW.review_seq IS NULL AND NEW.restaurant_seq IS NULL AND NEW.menu_seq IS NULL THEN
+   SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = '어떤 것과 관련된 사진인지 입력하세요.';
 	
-	ELSEIF TRIM(NEW.picture_name) = '' OR NEW.picture_name IS NULL THEN
-	SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = '사진파일이름 등록은 필수입니다.';
+   ELSEIF TRIM(NEW.picture_name) = '' OR NEW.picture_name IS NULL THEN
+   SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = '사진파일이름 등록은 필수입니다.';
 	
-	ELSEIF TRIM(NEW.picture_original_name) = '' OR NEW.picture_original_name IS NULL THEN
-	SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = '사진 이름 등록은 필수입니다.';
+   ELSEIF TRIM(NEW.picture_original_name) = '' OR NEW.picture_original_name IS NULL THEN
+   SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = '사진 이름 등록은 필수입니다.';
    
    ELSEIF TRIM(NEW.picture_url) = '' OR NEW.picture_url IS NULL THEN
    SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = '사진url은 등록은 필수입니다.';
