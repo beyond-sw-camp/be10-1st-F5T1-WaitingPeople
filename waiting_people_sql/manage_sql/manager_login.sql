@@ -2,7 +2,7 @@
 -- 관리자 로그인 체크 -작성:이성민
 SELECT 
        user_seq
-	  , user_id
+     , user_id
      , user_password
      , user_name
      , user_phone
