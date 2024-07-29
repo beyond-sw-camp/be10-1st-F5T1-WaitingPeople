@@ -1,3 +1,5 @@
+-- 회원가입 전 트리거 by ayoeng
+
 DROP TRIGGER IF EXISTS before_insert_user;
 
 DELIMITER //
