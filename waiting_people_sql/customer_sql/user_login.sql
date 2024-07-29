@@ -134,7 +134,7 @@ START TRANSACTION;
 SELECT
     user_name
 FROM tb_user
-WHERE user_id = 'Ayeong1' AND user_password = 'Ayeong12345';
+ WHERE user_id = 'Ayeong1' AND user_password = 'Ayeong12345';
 
 
 -- 아이디 찾기 by ayeong
@@ -142,7 +142,7 @@ START TRANSACTION;
 SELECT
     user_id
 FROM tb_user
-WHERE user_name = '전아영' AND user_phone = '01062116935';
+ WHERE user_name = '전아영' AND user_phone = '01062116935';
 
 
 -- 임시 비밀번호 발급 및 로그인 by ayeong
@@ -152,11 +152,11 @@ SELECT
     user_name
      , user_password
 FROM tb_user
-WHERE user_id = 'Ayeong1';
+ WHERE user_id = 'Ayeong1';
 
 UPDATE tb_user
 SET user_password = 'Ayeong54321'
-WHERE user_name = '전아영'
+ WHERE user_name = '전아영'
   AND user_id = 'Ayeong1'
   AND user_phone = '01062116935';
 
@@ -166,17 +166,17 @@ SELECT
     user_name
      , user_password
 FROM tb_user
-WHERE user_id = 'Ayeong1' AND user_password = 'Ayeong54321';
+ WHERE user_id = 'Ayeong1' AND user_password = 'Ayeong54321';
 
 -- 회원 탈퇴 by ayeong
 UPDATE tb_user
 SET withdraw_yn = 'Y'
   , mod_date = SYSDATE()
-WHERE user_id = 'Ayeong1' AND user_password = 'Ayeong12345';
+ WHERE user_id = 'Ayeong1' AND user_password = 'Ayeong12345';
 
 SELECT
     user_name
      , mod_date
      , withdraw_yn
 FROM tb_user
-WHERE user_id = 'Ayeong1' AND user_password = 'Ayeong12345';
+ WHERE user_id = 'Ayeong1' AND user_password = 'Ayeong12345';
