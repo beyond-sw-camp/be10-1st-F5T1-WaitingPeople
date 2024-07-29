@@ -1,0 +1,129 @@
+INSERT
+INTO tb_user(
+              user_id
+            , user_password
+            , user_name
+            , user_phone
+            , user_type
+            , adult_verify_yn
+)
+SELECT
+    'Ayeong1'
+     , 'Test0000'
+     , '전아영'
+     , '01062116935'
+     , 'C'
+     , 'Y'
+    WHERE NOT EXISTS
+               (SELECT
+                     1
+                  FROM tb_user
+               WHERE user_id = 'Ayeong1' OR user_phone = '01062116935');
+INSERT
+INTO tb_user(
+              user_id
+            , user_password
+            , user_name
+            , user_phone
+            , user_type
+            , adult_verify_yn
+)
+SELECT
+    'Uijin1'
+     , 'Test0000'
+     , '정의진'
+     , '01012349876'
+     , 'C'
+     , 'Y'
+    WHERE NOT EXISTS
+               (SELECT
+                     1
+                  FROM tb_user
+               WHERE user_id = 'Uijin1' OR user_phone = '01012349876');
+INSERT
+INTO tb_user(
+              user_id
+            , user_password
+            , user_name
+            , user_phone
+            , user_type
+            , adult_verify_yn
+)
+SELECT
+    'Chanyoun1'
+     , 'Test0000'
+     , '이창윤'
+     , '01065328795'
+     , 'C'
+     , 'Y'
+    WHERE NOT EXISTS
+               (SELECT
+                     1
+                  FROM tb_user
+               WHERE user_id = 'Chanyoun1' OR user_phone = '01065328795');
+INSERT
+INTO tb_user(
+              user_id
+            , user_password
+            , user_name
+            , user_phone
+            , user_type
+            , adult_verify_yn
+)
+SELECT
+    'Sungmin1'
+     , 'Test0000'
+     , '이성민'
+     , '01055552222'
+     , 'C'
+     , 'Y'
+    WHERE NOT EXISTS
+               (SELECT
+                     1
+                  FROM tb_user
+               WHERE user_id = 'Sungmin1' OR user_phone = '01055552222');
+INSERT
+INTO tb_user(
+              user_id
+            , user_password
+            , user_name
+            , user_phone
+            , user_type
+            , adult_verify_yn
+)
+SELECT
+    'Garam1'
+     , 'Test0000'
+     , '남가람'
+     , '01066668888'
+     , 'C'
+     , 'Y'
+    WHERE NOT EXISTS
+               (SELECT
+                     1
+                  FROM tb_user
+               WHERE user_id = 'Garam1' OR user_phone = '01066668888');
+INSERT
+INTO tb_user(
+              user_id
+            , user_password
+            , user_name
+            , user_phone
+            , user_type
+            , adult_verify_yn
+)
+SELECT
+    'Sanghyun1'
+     , 'Test0000'
+     , '박상현'
+     , '01077771111'
+     , 'C'
+     , 'Y'
+    WHERE NOT EXISTS
+                  (SELECT
+                        1
+                     FROM tb_user
+                    WHERE user_id = 'Sanghyun1' OR user_phone = '01077771111');
+
+COMMIT;
+SELECT * FROM tb_user;
