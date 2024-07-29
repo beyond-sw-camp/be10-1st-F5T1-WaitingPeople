@@ -65,7 +65,7 @@ Master-Slave구조는 고가용성과 확장성을 위해 자주 사용되는 DB
 
 ## ✅테스트케이스 문서
 
-## 테스트게이스
+## 테스트케이스
 ➡[테스트케이스 바로가기](https://drive.google.com/file/d/1ZKG5vFPU19yQFKOOYlr_OJLSqKaby2-I/view?usp=drive_link)
 ## 테스트케이스 코드 및 실행
 <details>
@@ -198,48 +198,237 @@ Master-Slave구조는 고가용성과 확장성을 위해 자주 사용되는 DB
         </details>   
     </details>
 </details>
-
+<hr>
 <details>
 <summary>자영업자관련기능</summary>
     <details>
-        <summary>음식점정보관리</summary>
+    <summary>음식점 메뉴 관련 기능</summary>
         <details>
-            <summary>1.사업자등록증등록</summary>
-            <img src="img/test_img/restaurant_test_img/음식점 정보관리/사업자 등록증 등록.gif" alt="사업자등록증_gif">
+            <summary>1. 음식점 메뉴 그룹 등록</summary>
+            <details>
+                <summary>1. 음식점 메뉴 그룹 이름 중복 등록</summary>
+                <img src="img/test_img/restaurant_test_img/음식점 메뉴 관리/기본 메뉴 그룹 이름 중복 등록 테스트.gif" alt="메뉴그룹중복등록테스트_gif">
+            </details>
+            <details>
+                <summary>2. 음식점 메뉴 그룹 이름 필수 테스트</summary>
+                <img src="img/test_img/restaurant_test_img/음식점 메뉴 관리/기본 메뉴 그룹 등록시 이름 필수인지 테스트.gif" alt="메뉴그룹이름필수테스트_gif">
+            </details>
+            <details>
+                <summary>3. 음식점 메뉴 그룹 설명 NULL 테스트</summary>
+                <img src="img/test_img/restaurant_test_img/음식점 메뉴 관리/기본 메뉴 그룹 등록시 설명NULL 테스트.gif" alt="메뉴그룹설명NULL테스트_gif">
+            </details>
         </details>
         <details>
-            <summary>2.음식점상세정보등록</summary>
-            <img src="img/test_img/restaurant_test_img/음식점 정보관리/음식점 상세등록.gif" alt="음식점상세등록_gif">
+            <summary>2. 음식점 메뉴 그룹 목록 초기 조회</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 메뉴 관리/메뉴 그룹 최초 조회 테스트.gif" alt="메뉴그룹목록초기조회_gif">
         </details>
         <details>
-            <summary>3.음식점삭제</summary>
-            <img src="img/test_img/restaurant_test_img/음식점 정보관리/음식점 삭제.gif" alt="음식점삭제_gif">
+            <summary>3. 음식점 메뉴 그룹 목록 이름순 정렬 조회</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 메뉴 관리/메뉴 그룹 조회 이름 순 정렬 테스트.gif" alt="메뉴그룹목록이름순정렬조회_gif">
         </details>
         <details>
-            <summary>4.공지사항등록</summary>
-            <img src="img/test_img/restaurant_test_img/음식점 정보관리/자영업자 공지사항 등록.gif" alt="공지사항등록_gif">
+            <summary>4. 음식점 메뉴 그룹 목록 이름순 반대 정렬 조회</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 메뉴 관리/메뉴 그룹 이름반대순 정렬 조회.gif" alt="메뉴그룹목록이름반대순정렬조회_gif">
         </details>
         <details>
-            <summary>5.공지사항조회</summary>
-            <img src="img/test_img/restaurant_test_img/음식점 정보관리/자신의 음식점 공지사항 조회.gif" alt="공지사항조회_gif">
+            <summary>5. 음식점 메뉴 그룹 수정</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 메뉴 관리/메뉴 그룹 수정 메뉴 그룹 이름 NULL 테스트.gif" alt="메뉴그룹수정테스트_gif">
         </details>
         <details>
-            <summary>6.공지사항수정</summary>
-            <img src="img/test_img/restaurant_test_img/음식점 정보관리/자신의 음식점 공지사항 수정.gif" alt="공지사항수정_gif">
+            <summary>6. 음식점 메뉴 그룹 삭제</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 메뉴 관리/메뉴 그룹 삭제시 관련 메뉴 변화 테스트.gif" alt="메뉴그룹삭제테스트_gif">
         </details>
         <details>
-            <summary>7.공지사항삭제</summary>
-            <img src="img/test_img/restaurant_test_img/음식점 정보관리/자영업자 공지사항 삭제.gif" alt="사업자등록증_gif">
+            <summary>7. 음식점 사진 미포함 메뉴 등록</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 메뉴 관리/사진 제외 메뉴 등록 테스트.gif" alt="사진미포함메뉴등록테스트_gif">
         </details>
         <details>
-            <summary>8.자영업자회원가입</summary>
-            <img src="img/test_img/restaurant_test_img/음식점 정보관리/자영업자 회원가입.gif" alt="자영업자회원가입_gif">
+            <summary>8. 음식점 사진 포함 메뉴 등록</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 메뉴 관리/사진 포함 메뉴 등록 테스트.gif" alt="사진포함메뉴등록테스트_gif">
+        </details>
+        <details>
+            <summary>9. 음식 메뉴 전체 최초 조회</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 메뉴 관리/메뉴 전체 최초 조회.gif" alt="메뉴전체최초조회테스트_gif">
+        </details>
+        <details>
+            <summary>10. 메뉴 그룹 이름으로 메뉴 목록 정렬 조회</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 메뉴 관리/메뉴 그룹을 기준으로 정렬 조회 테스트.gif" alt="메뉴그룹이름으로 메뉴목록정렬조회테스트_gif">
+        </details>
+        <details>
+            <summary>11. 메뉴 그룹 이름으로 메뉴 목록 반대 정렬 조회</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 메뉴 관리/메뉴 그룹을 기준으로 반대 정렬 조회 테스트.gif" alt="메뉴그룹이름으로 메뉴목록반대정렬조회테스트_gif">
+        </details>
+        <details>
+            <summary>12. 메뉴 이름으로 메뉴 목록 정렬 조회</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 메뉴 관리/메뉴 이름을 기준으로 메뉴 정렬 테스트.gif" alt="메뉴이름으로 메뉴목록정렬조회테스트_gif">
+        </details>
+        <details>
+            <summary>13. 메뉴 이름으로 메뉴 목록 반대 정렬 조회</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 메뉴 관리/메뉴 이름을 기준으로 메뉴 반대 정렬 테스트.gif" alt="메뉴이름으로 메뉴목록반대정렬조회테스트_gif">
+        </details>
+        <details>
+            <summary>14. 오래된 순으로 메뉴 목록 정렬 조회</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 메뉴 관리/메뉴 목록 오래된 순으로 조회 테스트.gif" alt="오래된 순으로 메뉴목록정렬조회테스트_gif">
+        </details>
+        <details>
+            <summary>15. 최신 순으로 메뉴 목록 정렬 조회</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 메뉴 관리/메뉴 목록 최신 순으로 조회 테스트.gif" alt="최신 순으로 메뉴목록정렬조회테스트_gif">
+        </details>
+        <details>
+            <summary>16. 음식점 메뉴 상세 조회</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 메뉴 관리/음식점 메뉴 상세 조회 테스트.gif" alt="메뉴상세조회테스트_gif">
+        </details>
+        <details>
+            <summary>17. 사진 수정 미포함 메뉴 수정</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 메뉴 관리/음식점 메뉴 수정(사진 수정 제외) 테스트.gif" alt="사진수정미포함메뉴수정_gif">
+        </details>
+        <details>
+            <summary>18. 사진 수정 포함 메뉴 수정</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 메뉴 관리/음식점 메뉴 수정(사진 수정 포함) 테스트.gif" alt="사진수정포함메뉴수정_gif">
+        </details>
+        <details>
+            <summary>19. 음식점 메뉴 삭제</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 메뉴 관리/음식점 메뉴 삭제 테스트.gif" alt="음식점메뉴삭제테스트_gif">
+        </details>
+    </details>
+    <details>
+        <summary>음식점 정보 관리 기능</summary>
+        <details>
+        <summary>1. 같은 업종의 음식점 찾기</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 정보관리/같은 업종의 음식점 찾기.gif" alt="같은 업종의 음식점 찾기_gif">
+        </details>
+        <details>
+            <summary>2. 다른 가게 오픈시간 조회</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 정보관리/다른 가게 오픈시간 조회.gif" alt="다른 가게 오픈시간 조회_gif">
+        </details>
+        <details>
+            <summary>3. 등록된 자신의 음식점 조회</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 정보관리/다른 가게 오픈시간 조회.gif" alt="다른 가게 오픈시간 조회_gif">
+        </details>
+        <details>
+            <summary>4. 사업자 등록증 등록</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 정보관리/사업자 등록증 등록.gif" alt="사업자 등록증 등록_gif">
+        </details>
+        <details>
+            <summary>5. 사진 조회</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 정보관리/사진 조회.gif" alt="사진 조회_gif">
+        </details>
+        <details>
+            <summary>6. 음식점 삭제</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 정보관리/음식점 삭제.gif" alt="음식점 삭제_gif">
+        </details>
+        <details>
+            <summary>7. 음식점 상세등록</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 정보관리/음식점 상세등록.gif" alt="음식점 상세등록_gif">
+        </details>
+        <details>
+            <summary>8. 자신의 음식점 공지사항 수정</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 정보관리/자신의 음식점 공지사항 수정.gif" alt="자신의 음식점 공지사항 수정_gif">
+        </details>
+        <details>
+            <summary>9. 자신의 음식점 공지사항 조회</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 정보관리/자신의 음식점 공지사항 조회.gif" alt="자신의 음식점 공지사항 조회_gif">
+        </details>
+        <details>
+            <summary>10. 자신의 태그 조회</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 정보관리/자신의 태그 조회.gif" alt="자신의 태그 조회_gif">
+        </details>
+        <details>
+            <summary>11. 자영업자 공지사항 삭제</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 정보관리/자영업자 공지사항 삭제.gif" alt="자영업자 공지사항 삭제_gif">
+        </details>
+        <details>
+            <summary>12. 자영업자 사진 등록</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 정보관리/자영업자 사진 등록.gif" alt="자영업자 사진 등록_gif">
+        </details>
+        <details>
+            <summary>13. 자영업자 알림 등록</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 정보관리/자영업자 알림 등록.gif" alt="자영업자 알림 등록_gif">
+        </details>
+        <details>
+            <summary>14. 자영업자 정보 수정</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 정보관리/자영업자 정보 수정.gif" alt="자영업자 정보 수정_gif">
+        </details>
+        <details>
+            <summary>15. 자영업자 태그 등록</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 정보관리/자영업자 태그 등록.gif" alt="자영업자 태그 등록_gif">
+        </details>
+        <details>
+            <summary>16. 자영업자 회원가입</summary>
+            <img src="img/test_img/restaurant_test_img/음식점 정보관리/자영업자 회원가입.gif" alt="자영업자 회원가입_gif">
+        </details>
+    </details>
+    <details>
+        <summary>웨이팅 예상 대기시간 기능</summary>
+        <details>
+            <summary>1. 오늘의 대기시간 분석</summary>
+            <img src="img/test_img/restaurant_test_img/웨이팅 예상대기시간/오늘의 웨이팅 대기시간 분석.gif" alt="오늘의 웨이팅 대기시간 분석.gif">
+        </details>
+        <details>
+            <summary>2. 시간대별 예상대기시간</summary>
+            <img src="img/test_img/restaurant_test_img/웨이팅 예상대기시간/시간대별 예상대기시간.gif" alt="시간대별 예상대기시간.gif">
+        </details>
+        <details>
+            <summary>3. 요일, 시간대별 예상대기시간-프로시저</summary>
+            <img src="img/test_img/restaurant_test_img/웨이팅 예상대기시간/요일,시간대별 예상대기시간.gif" alt="요일,시간대별 예상대기시간.gif">
+        </details>
+        <details>
+            <summary>4. 요일, 시간대별 예상대기시간-함수</summary>
+            <img src="img/test_img/restaurant_test_img/웨이팅 예상대기시간/요일,시간대별 예상대기시간_함수.gif" alt="요일,시간대별 예상대기시간_함수.gif">
+        </details>
+    </details>
+    <details>
+        <summary>웨이팅 목록 조회</summary>
+        <details>
+            <summary>1. 웨이팅 목록 조회</summary>
+            <img src="img/test_img/restaurant_test_img/웨이팅 목록 조회/웨이팅 목록 조회.gif" alt="웨이팅 목록 조회.gif">
+        </details>
+        <details>
+            <summary>2. 웨이팅 인원 조회</summary>
+            <img src="img/test_img/restaurant_test_img/웨이팅 목록 조회/웨이팅 인원 조회.gif" alt="웨이팅 인원 조회.gif">
+        </details>
+    </details>
+    <details>
+        <summary>웨이팅 목록 조회</summary>
+        <details>
+            <summary>1. 웨이팅 목록 조회</summary>
+            <img src="img/test_img/restaurant_test_img/웨이팅 목록 조회/웨이팅 목록 조회.gif" alt="웨이팅 목록 조회.gif">
+        </details>
+        <details>
+            <summary>2. 웨이팅 인원 조회</summary>
+            <img src="img/test_img/restaurant_test_img/웨이팅 목록 조회/웨이팅 인원 조회.gif" alt="웨이팅 인원 조회.gif">
+        </details>
+    </details>
+    <details>
+        <summary>음식점 전체 리뷰 조회, 정렬</summary>
+        <details>
+            <summary>1. 최신순-기본- 조회</summary>
+            <img src="img/test_img/restaurant_test_img/리뷰 정렬/전체리뷰조회(최신순)(1).gif" alt="전체리뷰조회(최신순).gif">
+        </details>
+        <details>
+            <summary>2. 별점순 조회</summary>
+            <img src="img/test_img/restaurant_test_img/리뷰 정렬/전체리뷰조회(별점순)(1).gif" alt="전체리뷰조회(별점순).gif">
+        </details>
+    </details>
+    <details>
+        <summary>리뷰 별점 조회</summary>
+        <details>
+            <summary>1. 평균 별점 조회</summary>
+            <img src="img/test_img/restaurant_test_img/리뷰 조회/평균 별점 조회.gif" alt="평균 별점 조회.gif">
+        </details>
+        <details>
+            <summary>2. 별점 별 리뷰수 조회</summary>
+            <img src="img/test_img/restaurant_test_img/리뷰 조회/별점 별 리뷰수 조회.gif" alt="별점 별 리뷰수 조회.gif">
         </details>
     </details>
 </details>
-
+<hr>
 <details>
     <summary>관리자 관련 기능</summary>
+    <details>
+        <summary>관리자 로그인 체크 </summary>
+        <img src="img/test_img/manager_test_img/로그인/관리자 로그인 체크.gif" alt="관리자 로그인 체크_gif">
+    </details>
     <details>  
         <summary>회원정보관리</summary>
         <details><summary>1.고객정보조회</summary>
@@ -255,7 +444,66 @@ Master-Slave구조는 고가용성과 확장성을 위해 자주 사용되는 DB
             <img src="img/test_img/manager_test_img/회원관리기능/관리자_탈퇴한자영업자정보조회.gif" alt="탈퇴한자영업자조회_gif">
         </details>
     </details>
-    
+    <details>  
+        <summary>태그관리</summary>
+        <details>
+            <summary>1. 음식점 태그 조회</summary>
+            <img src="img/test_img/manager_test_img/태그/음식점 태그 조회.gif" alt="음식점 태그 조회_gif">
+        </details>
+        <details>
+            <summary>2. 음식점 태그 이름 등록</summary>
+            <img src="img/test_img/manager_test_img/태그/음식점 태그 이름 등록.gif" alt="음식점 태그 이름 등록_gif">
+        </details>
+        <details>
+            <summary>3. 음식점 태그 삭제</summary>
+            <img src="img/test_img/manager_test_img/태그/음식점 태그 삭제.gif" alt="음식점 태그 삭제_gif">
+        </details>
+    </details>
+    <details>  
+        <summary>카테고리관리</summary>
+        <details>
+            <summary>1. 모든 음식점 카테고리 조회</summary>
+            <img src="img/test_img/manager_test_img/카테고리/음식점 입장 유무 체크.gif" alt="음식점 입장 유무 체크_gif">
+        </details>
+        <details>
+            <summary>2. 음식점 카테고리 등록</summary>
+            <img src="img/test_img/manager_test_img/카테고리/음식점 카테고리 등록.gif" alt="음식점 카테고리 등록_gif">
+        </details>
+        <details>
+            <summary>3. 음식점 카테고리 노출 여부</summary>
+            <img src="img/test_img/manager_test_img/카테고리/음식점 카테고리 노출 여부.gif" alt="음식점 카테고리 노출 여부_gif">
+        </details>
+    </details>
+    <details>  
+        <summary>음식점등록관리</summary>
+        <details>
+            <summary>1. 음식점 등록 승인</summary>
+            <img src="img/test_img/manager_test_img/음식점관리기능/관리자_음식점등록승인.gif" alt="음식점 등록_gif">
+        </details>
+        <details>
+            <summary>2. 등록 승인 음식점 조회</summary>
+            <img src="img/test_img/manager_test_img/음식점관리기능/관리자_등록승인음식점조회.gif" alt="음식점 조회_gif">
+        </details>
+        <details>
+            <summary>3. 등록 미승인 음식점 조회</summary>
+            <img src="img/test_img/manager_test_img/음식점관리기능/관리자_등록미승인음식점조회.gif" alt="음식점 조회_gif">
+        </details>
+        <details>
+            <summary>4.폐업처리 음식점 조회 </summary>
+            <img src="img/test_img/manager_test_img/음식점관리기능/관리자_폐업처리,조회.gif" alt="음식점 조회_gif">
+        </details>
+    </details>
+    <details>  
+        <summary>음식점리뷰관리</summary>
+        <details>
+            <summary>1. 삭제 요청 리뷰 조회</summary>
+            <img src="img/test_img/manager_test_img/음식점관리기능/관리자_삭제요청리뷰조회.gif" alt="리뷰조회_gif">
+        </details>
+        <details>
+            <summary>2. 리뷰 삭제 요청 거부</summary>
+            <img src="img/test_img/manager_test_img/음식점관리기능/관리자_리뷰삭제요청거부.gif" alt="리뷰조회_gif">
+        </details>
+    </details>
 </details>
 
 ## 주요 쿼리
@@ -280,4 +528,14 @@ Master-Slave구조는 고가용성과 확장성을 위해 자주 사용되는 DB
 </details>
 
 ## 🏁회고록
+
+
+| 팀 원 | 회고록                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| --- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 정의진 | 프로젝트의 기획 단계부터 DB구현, 서버 구축, 백업 관리 까지 진행하며 팀 프로젝트의 기반을 다질 수 있었습니다. 처음에는 다소 복잡한 주제 선정으로 인해 기획 단계부터 어려움이 있었지만, 팀원들의 꼼꼼한 확인과 수정 덕분에 무사히 프로젝트를 완성할 수 있습니다. 다만 DB구현만으로 모든 요구 사항을 충족시키기에는 한계가 있기에 다들 고민이 많았습니다. DB로 구현할 수 있는 기능의 한계를 극복하기 위해 다들 노력을 많이 했고 이에 따라 좋은 결과가 나온 것 같습니다. 이번 프로젝트를 통해 SQL작성 능력을 키우고 프로젝트 기획 단계의 역량을 기를 수 있었습니다. |
+| 전아영 | 이번 프로젝트를 진행하면서 데이터베이스만 사용해 쿼리를 짜고 테스트를 하며, 쿼리에서의 예외 처리에 대해 깊게 고민할 수 있었던 점이 좋았습니다. <br>하지만, 쿼리만으로 예외를 처리하는 것에 한계가 있어 테이블의 수정이 잦았습니다. 또, 테스트 케이스에서 누락된 부분도 많고 특히 회원 탈퇴 기능에 대해 아쉬운 점이 많았습니다. <br>이번 프로젝트를 기반으로 다음 프로젝트에서는 처음 기능을 만들 때 기능의 역할이나 필요성에 대해 꼼꼼히 분석하고 구조화해서 문서보다는 쿼리의 성능에 대해 고민할 수 있는 시간을 늘리고 싶다는 생각을 했습니다. |
+| 이성민 | 이번 기반기술 프로젝트를 진행하면서 특히 외래키 제약 조건에 대해 깊이 이해할 수 있는 기회를 가졌습니다. <br>초기에는 이러한 제약 조건을 설계하고 구현하는 과정이 복잡하고 까다롭게 느껴졌지만, 프로젝트를 진행하며 점점 익숙해졌습니다. <br>또한, 이번 프로젝트는 UI 없이 백엔드와 데이터베이스만으로 시스템을 구현하는 작업이라 UI가 없는 상태에서의 데이터 처리와 시스템 동작을 이해하고 검증하는 것이 생각보다 훨씬 어려웠습니다.하지만 이러한 어려움에도 불구하고, 팀원들과 함께 프로젝트를 진행한 덕분에 포기하지 않고 끝까지 해결할 수 있었습니다. <br>이 과정에서 팀워크의 중요성을 다시 한 번 느꼈고, 서로의 강점을 활용하여 프로젝트를 성공적 완성 했습니다.                                                                                                                                                              |
+| 이창윤 | 이번 프로젝트를 통해 프로젝트의 진행에 있어 문서화가 매우 중요한 부분을 차지한다는 것을 깨달았습니다. 계획을 세우는 단계에서부터 많은 고민과 대화가 이루어져야 한다는 것을 배웠고, 프로젝트를 진행하는 과정 속에서 서로의 역할을 인지하고 병합하는 과정이 생각보다 더 많이 이루어져야 했다는 것도 느꼈습니다. SQL 문법을 익히는 것과 문법을 활용하여 프로젝트에 대입하는 것은 전혀 다른 분야의 공부였으며, 이 프로젝트를 통해 서로의 부족함을 채워가며 다양한 고민과 방법을 찾는 과정이 저에게 소중한 경험이었습니다. 팀원의 출중한 실력보다 서로간의 배려와 인정하는 자세에서 팀프로젝트의 깊은 의미를 배웠습니다. 다양한 사람들과 함께 배운 내용을 토대로 서로 알려주고 배우는 과정에서 저는 한 층도 성장하였고 다음 프로젝트에서 부족함을 채워서 더 자신감있게 임할 수 있을 것입니다. 모두의 역할이 중요했으며, 서로의 이해심이 지금의 프로젝트를 완성시켰다고 생각합니다. 이번 프로젝트는 잊지 못할 경험이었고 늘 상시시키며 성장하는 백엔드 개발자가 되도록 하겠습니다. |
+| 박상현 | 이론에서 이해하지 못한 부분이나 '왜 이런식으로 하지' 라는 의문이 있던 부분들, 연습 문제를 풀 때 주어진 데이터에서 select 문으로 정보만 가져오는 연습만 하다가 실제로 DB로 구현해보니 더 많은 도움이 되었고, DB 설계를 하면서 처음에 모델링 하는게 얼마나 중요한지 알 수 있는 계기가 되었다. <br>처음에 완벽하게 모델링 하지 못해서 컬럼을 설정하거나 데이터를 추가할 때, 다시 처음으로 돌아와서 모델링을 수정하는 과정에서 시간을 많이 쓰게 된 것 같아서 모델링이 얼마나 중요하고 서로의 상간 관계를 꼼꼼하게 해야 된다는 것을 배울 수 있었다. 개발자는 개발만 잘해야 하는 것이 아니라 문서화 작업까지도 잘하면 더 큰 도움이 될 수 있다는 걸 느낄 수 있었다. 또한 팀으로 프로젝트를 진행하면서 모르는 부분이나 부족한 부분을 채워 줄 수 있어서 좋았다. 팀원이 6명으로 여러가지 의견 충돌이 있을 줄 알았으나, 문제 없이 금방 의견을 추합 할 수 있었다. <br>아직 내 역량이 부족하고 어려운 부분이 있었지만 앞으로 더 발전하도록 노력해야겠다. |
+| 남가람 | 여러 어려움에도 불구하고 이번 프로젝트를 통해 많은 것을 배울 수 있었습니다. 특히 쿼리를 작성할때 프로시저 구현으로 경험을 쌓으며 기술적으로 성장할 수 있었습니다. 비록 처음 요구사항과 모델링이 완벽하지 못해서 프로젝트 후반까지 테이블 구조를 여러 차례 수정해야 했지만, 이를 통해 모델링의 중요성을 깊이 깨닫게 되었습니다. 또한, 화면 구현이 없었기 때문에 처음 요구사항을 화면 단위로 생각하고 쿼리 구현을 사용자 단위로 나누면서, 비슷한 기능을 여러 팀원이 나누게 되어 수정이 발생할 때마다 다른 팀원들에게 영향이 미친 점은 아쉬웠습니다. 다음 프로젝트에서는 이러한 점을 개선하여 더 완벽한 요구사항과 모델링을 구현하고 싶습니다. 사실 처음의 주제를 변경하게 되면서 많은 고민이 있었지만, 다행히도 좋은 팀원들을 만나 부족한 부분을 서로 보완하며 프로젝트를 성공적으로 마칠 수 있었습니다. 이번 프로젝트를 통해 느낀 점과 배운 점을 바탕으로 앞으로 더 나은 성과를 낼 수 있을 것 같습니다. 팀워크의 중요성을 다시 한번 깨달을 수 있었고, 함께 노력하며 성장할 수 있었던 팀원들에게 감사드립니다. |
 
