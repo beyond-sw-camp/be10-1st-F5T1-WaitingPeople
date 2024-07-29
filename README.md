@@ -30,7 +30,7 @@
     - 예약자는 예약이 등록되고, 가게 입장이 확정될 때 알림을 받을 수 있습니다.
 - 웨이팅 관리하기
     - 자영업자는 현재 가게의 웨이팅 현황을 확인하고 상세 조회 할 수 있습니다.
-    - 자영업자는 가게의 상태와 등록된 웨이팅을 고려하여 웨이팅 순번을 수정할 수 있습니다.
+
 
 ## 💬요구사항 명세
 ➡[요구사항명세 바로가기](https://drive.google.com/file/d/1GMWnQc-rdHaP2VyZJ57iuRzzB0-1z4wF/view?usp=drive_link)
@@ -375,17 +375,6 @@ Master-Slave구조는 고가용성과 확장성을 위해 자주 사용되는 DB
         <details>
             <summary>4. 요일, 시간대별 예상대기시간-함수</summary>
             <img src="img/test_img/restaurant_test_img/웨이팅 예상대기시간/요일,시간대별 예상대기시간_함수.gif" alt="요일,시간대별 예상대기시간_함수.gif">
-        </details>
-    </details>
-    <details>
-        <summary>웨이팅 목록 조회</summary>
-        <details>
-            <summary>1. 웨이팅 목록 조회</summary>
-            <img src="img/test_img/restaurant_test_img/웨이팅 목록 조회/웨이팅 목록 조회.gif" alt="웨이팅 목록 조회.gif">
-        </details>
-        <details>
-            <summary>2. 웨이팅 인원 조회</summary>
-            <img src="img/test_img/restaurant_test_img/웨이팅 목록 조회/웨이팅 인원 조회.gif" alt="웨이팅 인원 조회.gif">
         </details>
     </details>
     <details>
