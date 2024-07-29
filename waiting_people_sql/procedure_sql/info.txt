@@ -1,1 +1,0 @@
-procedure와 trigger 올려주세요
