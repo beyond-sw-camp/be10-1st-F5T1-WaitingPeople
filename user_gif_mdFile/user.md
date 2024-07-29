@@ -55,4 +55,4 @@
 <details>
     <summary>11. 회원 탈퇴</summary>
     <img src="../img/test_img/customer_test_img/회원 관리 기능/withdrawUser.gif" alt="회원탈퇴_gif">
-</details>
+</details>  
