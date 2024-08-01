@@ -11,7 +11,7 @@ SELECT review_seq
 	  , user_seq
 	  , restaurant_seq
 	  , waiting_seq
-	  , user_id
+	  , u.user_id
 	  , review_content
 	  , review_rating
 	  , reg_date
@@ -19,5 +19,6 @@ SELECT review_seq
 	  , delete_date
 	  , delete_yn
 	  , visible_yn
-  FROM tb_review
+  FROM tb_review r
+  LEFT JOIN tb_user u ON r.user_seq = u.user_seq
  WHERE visible_yn = 'N' && delete_yn='Y';

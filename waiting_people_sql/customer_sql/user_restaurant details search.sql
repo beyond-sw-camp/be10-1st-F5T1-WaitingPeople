@@ -45,7 +45,7 @@ SELECT
         
 -- 음식점 전체 리뷰 조회 -작성: 이성민
 SELECT 
-       user_id
+       u.user_id
      , rv.review_rating
      , rvc.reg_date
      , i.picture_url
@@ -58,12 +58,13 @@ SELECT
   FROM tb_restaurant r
   JOIN tb_review rv ON r.restaurant_seq = rv.restaurant_seq
   LEFT JOIN tb_review_comment rvc ON rv.review_seq = rvc.review_seq 
-  LEFT JOIN tb_image_file i ON rv.review_seq = i.review_seq   
+  LEFT JOIN tb_image_file i ON rv.review_seq = i.review_seq
+  LEFT JOIN tb_user u ON u.user_seq = rv.user_seq
  WHERE r.restaurant_seq = 1;
 
 -- 음식점 사진 포함 리뷰 조회 -작성: 이성민
-SELECT 
-       rv.user_id
+SELECT
+       u.user_id
      , rv.review_rating
      , rvc.reg_date AS comment_reg_date
      , i.picture_url
@@ -77,6 +78,7 @@ SELECT
   JOIN tb_review rv ON r.restaurant_seq = rv.restaurant_seq
   LEFT JOIN tb_review_comment rvc ON rv.review_seq = rvc.review_seq
   LEFT JOIN tb_image_file i ON rv.review_seq = i.review_seq
+  LEFT JOIN tb_user u ON u.user_seq = rv.user_seq
  WHERE r.restaurant_seq = 1
    AND i.picture_url IS NOT NULL;
 
