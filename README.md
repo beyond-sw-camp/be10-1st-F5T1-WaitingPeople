@@ -110,11 +110,11 @@ Master-Slave구조는 고가용성과 확장성을 위해 자주 사용되는 DB
         </details>
         <details>
             <summary>10. 내가 쓴 리뷰 삭제</summary>
-            <img src="../img/test_img/customer_test_img/회원 관리 기능/deleteMyReview.gif" alt="리뷰삭제_gif">
+            <img src="img/test_img/customer_test_img/회원 관리 기능/deleteMyReview.gif" alt="리뷰삭제_gif">
         </details>
         <details>
             <summary>11. 회원 탈퇴</summary>
-            <img src="../img/test_img/customer_test_img/회원 관리 기능/withdrawUser.gif" alt="회원탈퇴_gif">
+            <img src="img/test_img/customer_test_img/회원 관리 기능/withdrawUser.gif" alt="회원탈퇴_gif">
         </details>
     </details>
     <details>
@@ -148,7 +148,7 @@ Master-Slave구조는 고가용성과 확장성을 위해 자주 사용되는 DB
             <img src="img/test_img/customer_test_img/음식점 검색 기능/고객_음식점카테고리검색.gif" alt="카테고리검색_gif">
         </details>
             <details><summary>6.음식점별점순정렬</summary>
-        <img src="mg/test_img/customer_test_img/음식점 정렬 기능/고객_음식점별점순정렬.gif" alt="별점정렬_gif">
+        <img src="img/test_img/customer_test_img/음식점 정렬 기능/고객_음식점별점순정렬.gif" alt="별점정렬_gif">
         </details>
         <details><summary>7.음식점리뷰순정렬</summary>
             <img src="img/test_img/customer_test_img/음식점 정렬 기능/고객_음식점리뷰순정렬.gif" alt="리뷰정렬_gif">
@@ -331,7 +331,7 @@ Master-Slave구조는 고가용성과 확장성을 위해 자주 사용되는 DB
         </details>
         <details>
             <summary>10. 자신의 태그 조회</summary>
-            <img src="img/test_img/restaurant_test_img/음식점 정보관리/자신의 태그 조회.gif" alt="자신의 태그 조회_gif">
+            <img src="img/test_img/restaurant_test_img/음식점 정보관리/자신의 음식점 태그 조회.gif" alt="자신의 태그 조회_gif">
         </details>
         <details>
             <summary>11. 자영업자 공지사항 삭제</summary>
@@ -343,7 +343,7 @@ Master-Slave구조는 고가용성과 확장성을 위해 자주 사용되는 DB
         </details>
         <details>
             <summary>13. 자영업자 알림 등록</summary>
-            <img src="img/test_img/restaurant_test_img/음식점 정보관리/자영업자 알림 등록.gif" alt="자영업자 알림 등록_gif">
+            <img src="img/test_img/restaurant_test_img/음식점 정보관리/자영업자 공지사항 등록.gif" alt="자영업자 알림 등록_gif">
         </details>
         <details>
             <summary>14. 자영업자 정보 수정</summary>
@@ -351,7 +351,7 @@ Master-Slave구조는 고가용성과 확장성을 위해 자주 사용되는 DB
         </details>
         <details>
             <summary>15. 자영업자 태그 등록</summary>
-            <img src="img/test_img/restaurant_test_img/음식점 정보관리/자영업자 태그 등록.gif" alt="자영업자 태그 등록_gif">
+            <img src="img/test_img/restaurant_test_img/음식점 정보관리/자영업자 태그등록.gif" alt="자영업자 태그 등록_gif">
         </details>
         <details>
             <summary>16. 자영업자 회원가입</summary>
@@ -452,7 +452,7 @@ Master-Slave구조는 고가용성과 확장성을 위해 자주 사용되는 DB
         <summary>카테고리관리</summary>
         <details>
             <summary>1. 모든 음식점 카테고리 조회</summary>
-            <img src="img/test_img/manager_test_img/카테고리/음식점 입장 유무 체크.gif" alt="음식점 입장 유무 체크_gif">
+            <img src="img/test_img/manager_test_img/카테고리/모든 음식점 카테고리 조회.gif" alt="음식점 입장 유무 체크_gif">
         </details>
         <details>
             <summary>2. 음식점 카테고리 등록</summary>
@@ -460,7 +460,7 @@ Master-Slave구조는 고가용성과 확장성을 위해 자주 사용되는 DB
         </details>
         <details>
             <summary>3. 음식점 카테고리 노출 여부</summary>
-            <img src="img/test_img/manager_test_img/카테고리/음식점 카테고리 노출 여부.gif" alt="음식점 카테고리 노출 여부_gif">
+            <img src="img/test_img/manager_test_img/카테고리/음식점 카테고리 노출 여부 체크.gif" alt="음식점 카테고리 노출 여부_gif">
         </details>
     </details>
     <details>  
