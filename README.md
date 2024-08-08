@@ -45,7 +45,7 @@
 ![replication](./img/readme_img/물리ERD_Wating_People(최종본).png)
 
 ## 테이블 정의서
-➡[테이블정의서 바로가기](https://drive.google.com/file/d/1lxyl6VMtoPj4RXdAzY3h8CcjOe12qXSO/view?usp=drive_link)
+➡[테이블정의서 바로가기](https://drive.google.com/file/d/1Ao2cKg2S1v0ghKwAUJ0kuxp-vOI6O0FR/view?usp=sharing)
 ## 🔗Replication
 ### Master-Slave Architecher
 ![replication](./img/readme_img/db_replication.png)
